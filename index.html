@@ -10,25 +10,23 @@
 <body>
     <header class="header">
         <h1>Dibuja con Canvas usando el Mouse</h1>
-        <button href="#index.html" class="button">Inicia</button>
+        <button href="#" class="button">Inicia</button>
     </header>
     <section class="contenedor">
-        <h3>Selecciona el tamaño del puntero y color deseado. Luego inicia a dibujar haciendo click en el boton:</h3>
+        <h3>Selecciona el tamaño del puntero y color deseado. Luego inicia a dibujar haciendo click con el mouse</h3>
         <div class="instrucciones">
             <div class="nota">
                 <label>Tamaño Puntero</label>
-                <input type="number" id="puntero"/ min="2" max="10">
+                <input type="number" id="puntero" min="0" max="5"/>
             </div>
             <div class="nota">
                 <label>Color</label>
                 <input type="color" id="color"/>
             </div>
-            <button href="#" class="button">
-            Traza</button>
-            </div>
+        <input type="button" class="button" id="borrador" value="Borrar"/>
         </div>
-    <section>
-        <canvas width="900" height="520" id="dibujito"></canvas>
+    <section class="contenedor">
+        <canvas width="900" height="500" id="canvas">No soporta HTML</canvas>
         <script type="text/javascript">
         inicio();
         </script>
